@@ -23,5 +23,10 @@ pipeline {
                 sh './jenkins/scripts/kill.sh'
             }
         }
+        stage('Deploy') {
+            steps {
+                sh './jenkins/scripts/deploy.sh'
+            }
+        }
     }
 }
